@@ -1,8 +1,8 @@
 <component name="ArtifactManager">
-  <artifact type="war" name="spring-websockets:war">
+  <artifact type="war" name="spring-live-updates:war">
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="spring-live-updates.war">
-      <element id="artifact" artifact-name="spring-websockets:war exploded" />
+      <element id="artifact" artifact-name="spring-live-updates:war exploded" />
     </root>
   </artifact>
 </component>
