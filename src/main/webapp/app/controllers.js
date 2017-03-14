@@ -54,10 +54,10 @@ angular.module("myApp.controllers", []).controller("ideaCtrl", function($scope, 
 	};
 	
 	$scope.initSockets = function() {
-		$scope.socket.client = new SockJS('/spring-live-updates/notify');
+		$scope.socket.client = new SockJS('/notify');
 		$scope.socket.stomp = Stomp.over($scope.socket.client);
 		$scope.socket.stomp.connect({}, function() {
-			$scope.socket.stomp.subscribe("/topic/notify", $scope.notify);
+			$scope.socket.stomp.subscribe('/topic/notify', $scope.notify);
 		});
 		$scope.socket.client.onclose = $scope.reconnect;
 	};
